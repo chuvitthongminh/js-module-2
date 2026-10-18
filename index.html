@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        /* #image {
+            border: 1px solid black;
+            display: block;
+            height: 1000px;
+        }
+        img {
+            width: 500px;
+            height: 500px;
+        } */
+
+        #image {
+            width: 570px;
+            height: 300px;
+            border: 5px solid black;
+            background-color: #8e8e8e;
+            color: #FFFFFF;
+            font-size: 150%;
+            text-align: center;
+            line-height: 300px; /* Căn chữ giữa khung theo chiều dọc */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 25px;
+        }
+
+        .preview {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+          
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+     
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <img class="preview" alt="Ảnh số 1" src="img/1.png" onmouseover="upDate(this)" onmouseout="undo()">
+    <img class="preview" alt="Ảnh số 2" src="img/2.jpg" onmouseover="upDate(this)" onmouseout="undo()">
+    <img class="preview" alt="Ảnh số 3" src="img/3.jpg" onmouseover="upDate(this)" onmouseout="undo()">
+
+    <script src="main.js"></script>
+</body>
+</html>
